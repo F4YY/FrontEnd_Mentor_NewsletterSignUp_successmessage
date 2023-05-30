@@ -224,7 +224,7 @@ export const Styledthank = styled.div`
         button{
             width: 100%;
             font-size: 1em;
-            margin: 60% 0 20px 0;
+            margin: 50% 0 20px 0;
         }
     }
 `
