@@ -10,7 +10,6 @@ export const Container = styled.div`
     --White: hsl(0, 0%, 100%);
     * {
         margin: 0;
-        padding: 0;
     }
     font-size: 16px;
     font-family: 'Roboto', sans-serif;

@@ -6,11 +6,9 @@ import { Thanksubscribe } from './Thanksubscribe';
 
 export const Newslettersuccess = () => {
     const [submit, setSubmit] = React.useState(false);
-
     const submitHandler = () => {
-        setSubmit(true);
+        setSubmit(!submit);
     }
-
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -22,9 +20,9 @@ export const Newslettersuccess = () => {
         }),
         onSubmit: values => {
             submitHandler();
+            values.email = '';
         },
     });
-
   return (
     <>
         {!submit ? (
@@ -45,7 +43,7 @@ export const Newslettersuccess = () => {
                             <label htmlFor="email">Email address</label>
                             <label>
                                 {formik.touched.email && formik.errors.email &&
-                                (<h4 style={{color: "var(--Tomato)"}}><em>{formik.errors.email}</em></h4>)}
+                                (<h4 style={{color: "var(--Tomato)"}}>{formik.errors.email}</h4>)}
                             </label>
                         </Hstack>
                         <input

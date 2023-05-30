@@ -24,7 +24,7 @@ export const Styledneswletter = styled(Hstackflexi)`
     box-shadow: 0 10px 20px 1px rgba(0,0,0,0.25);
     @media screen and (max-width: 1025px) {
         width:85%;
-        margin: 20px;
+        margin:20px;
     }
     @media screen and (max-width: 600px) {
         width: fit-content;
@@ -52,6 +52,9 @@ export const Leftsider = styled(Vstack)`
         font-size: 1em;
         font-weight: var(--regular);
         margin:0 0 25px 0;
+    }
+    ul{
+        padding:0;
     }
     li{
         list-style: none;
@@ -131,19 +134,14 @@ export const Leftsider = styled(Vstack)`
             font-size: .95em;
             margin:0 0 25px 0;
         }
-        label{
-            margin: 30px 0 10px 0;
-        }
         input{
             width: auto;
             height: 50px;
             font-size: .9em;
-            margin: 0 0 25px 0;
         }
         button{
             width: 100%;
             font-size: .9em;
-            margin: 0 0 20px 0;
         }
     }
 `
@@ -171,7 +169,7 @@ export const Styledthank = styled.div`
     width: 380px;
     height: 420px;
     border-radius: 40px;
-    padding: 50px 60px 40px;
+    padding: 40px 60px;
     color: var(--neutral-1);
     background-color: var(--neutral-4);
     box-shadow: 0 10px 20px 1px rgba(0,0,0,0.35);
@@ -179,7 +177,7 @@ export const Styledthank = styled.div`
         font-size: 3.3em;
         font-weight: var(--bold);
         line-height: 1;
-        margin: 15px 0 20px 0;
+        margin: 35px 0 20px 0;
     }
     p{
         font-size: 1em;
@@ -212,12 +210,12 @@ export const Styledthank = styled.div`
         width: fit-content;
         height: auto;
         border-radius: 0;
-        padding: 50px 25px 40px;
+        padding: 100px 25px 40px;
         margin:70px 0 20px;
         box-shadow: none;
         h1{
             font-size: 2.7em;
-            margin: 15px 0 20px 0;
+            margin: 45px 0 25px;
         }
         p{
             font-size: .95em;
