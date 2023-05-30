@@ -9,6 +9,10 @@ export const Newslettersuccess = () => {
     const submitHandler = () => {
         setSubmit(!submit);
     }
+    const dismissHandler = () => {
+        setSubmit(!submit);
+        formik.values.email = '';
+    }
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -20,7 +24,6 @@ export const Newslettersuccess = () => {
         }),
         onSubmit: values => {
             submitHandler();
-            values.email = '';
         },
     });
   return (
@@ -67,7 +70,12 @@ export const Newslettersuccess = () => {
             </Leftsider>
             <Rightsider/>
         </Styledneswletter>) : (
-            <Thanksubscribe submit={submit} submitHandler={submitHandler}/> )
+            <Thanksubscribe
+                submit={submit}
+                submitHandler={submitHandler}
+                dismissHandler={dismissHandler}
+                value={formik.values.email}
+            />)
         }
     </>
   )

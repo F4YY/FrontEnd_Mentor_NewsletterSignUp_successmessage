@@ -15,10 +15,10 @@ export const Thanksubscribe = (props) => {
                 Thanks for subscribing!
             </h1>
             <p>
-                A confirmation email has been sent to <b>admin@faydgalgona.com</b>.
+                A confirmation email has been sent to <b>{props.value}</b>.
                 Please open it and click the button inside to confirm your subscription.
             </p>
-            <button onClick={props.submitHandler}>Dismiss message</button>
+            <button onClick={props.dismissHandler}>Dismiss message</button>
         </Styledthank>) :
         (<Newslettersuccess/>)
     }
